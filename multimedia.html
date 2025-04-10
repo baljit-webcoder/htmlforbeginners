@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML for Beginners</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Baljit Panda" />
+  <meta name="keywords" content="HTML, Multimedia, Image, Audio, Video, Beginners, Tutorial" />
+  <meta name="description" content="Learn how to use the &lt;img&gt;, &lt;audio&gt;, and &lt;video&gt; tags in HTML with their attributes." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <section class="main">
+    <h1>Multimedia in HTML</h1>
+    <hr /><br />
+
+    <p>HTML lets you easily embed images, audio, and video content using built-in tags.</p>
+
+    <section>
+      <h2>1. Image - <code>&lt;img&gt;</code></h2>
+      <pre class="code">
+&lt;img src="images/sunset.jpg" alt="Sunset View" width="400" height="300"&gt;
+      </pre>
+      <p><strong>Attributes:</strong></p>
+      <ul>
+        <li><code>src</code>: Path to the image file</li>
+        <li><code>alt</code>: Text shown if the image fails to load</li>
+        <li><code>width</code>, <code>height</code>: Size in pixels</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Audio - <code>&lt;audio&gt;</code></h2>
+      <pre class="code">
+&lt;audio controls src="audio/music.mp3"&gt;&lt;/audio&gt;
+      </pre>
+      <p><strong>Attributes:</strong></p>
+      <ul>
+        <li><code>controls</code>: Shows play/pause UI</li>
+        <li><code>autoplay</code>: Starts playing automatically</li>
+        <li><code>loop</code>: Repeats the audio</li>
+        <li><code>muted</code>: Mutes audio by default</li>
+        <li><code>preload</code>: Loads file before playing (<code>auto</code>, <code>metadata</code>, or <code>none</code>)</li>
+      </ul>
+      <pre class="code">
+&lt;audio controls autoplay loop muted preload="auto" src="audio/music.mp3"&gt;&lt;/audio&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>3. Video - <code>&lt;video&gt;</code></h2>
+      <pre class="code">
+&lt;video width="480" height="360" controls src="video/sample.mp4"&gt;&lt;/video&gt;
+      </pre>
+      <p><strong>Attributes:</strong></p>
+      <ul>
+        <li><code>controls</code>: Displays video controls</li>
+        <li><code>autoplay</code>: Starts video on load</li>
+        <li><code>loop</code>: Plays video repeatedly</li>
+        <li><code>muted</code>: Mutes video by default</li>
+        <li><code>poster</code>: Preview image before play</li>
+        <li><code>width</code>, <code>height</code>: Size of the video</li>
+        <li><code>preload</code>: Loads file before play</li>
+      </ul>
+      <pre class="code">
+&lt;video width="480" height="360" controls autoplay loop muted preload="auto" poster="images/poster.jpg" src="video/sample.mp4"&gt;&lt;/video&gt;
+      </pre>
+    </section>
+    <section>
+      <h2>📁 Understanding File Paths in HTML</h2>
+      <p>When using multimedia in HTML, like images, audio, or video files, the <code>src</code> attribute tells the browser where the file is located. This is called a <strong>file path</strong>.</p>
+    
+      <h3>Types of Paths:</h3>
+      <ul>
+        <li><strong>Same folder:</strong><br>
+          <code>&lt;img src="photo.jpg"&gt;</code><br>
+          → Looks for the file in the same folder as the HTML file.
+        </li>
+    
+        <li><strong>Inside a folder:</strong><br>
+          <code>&lt;img src="images/photo.jpg"&gt;</code><br>
+          → Goes into the <code>images</code> folder and finds <code>photo.jpg</code>.
+        </li>
+    
+        <li><strong>Going up one folder: <code>../</code></strong><br>
+          <code>&lt;img src="../images/photo.jpg"&gt;</code><br>
+          → Moves <strong>up one level</strong> and then into the <code>images</code> folder.
+        </li>
+    
+        <li><strong>Going up two folders: <code>../../</code></strong><br>
+          <code>&lt;img src="../../assets/pic.jpg"&gt;</code><br>
+          → Moves up two folders, then into <code>assets</code>.
+        </li>
+    
+        <li><strong>Absolute Path:</strong><br>
+          <code>&lt;img src="https://example.com/image.jpg"&gt;</code><br>
+          → Loads from a full website URL (online).
+        </li>
+      </ul>
+    
+      <h3>💡 Tip:</h3>
+      <p>Keep your folders organized. Create separate folders like <code>images/</code>, <code>audio/</code>, and <code>video/</code> inside <code>multimedia/</code> to make paths easier to manage.</p>
+    </section>
+    
+
+    <div style="text-align:center;">
+      <a href="hyperlinks.html"><button>← Previous Page</button></a>
+      <a href="buttons-more.html"><button>Next Page →</button></a>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>© <a href="https://baljitpanda.rf.gd" target="_blank">Baljit Panda</a> | All Rights Reserved</p>
+    <p><a href="terms.html">Lisence [GNU General Public License (GPL) v3]</a></p>
+  </footer>
+</body>
+</html>

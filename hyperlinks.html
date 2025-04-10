@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML for Beginners</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Baljit Panda" />
+  <meta name="keywords" content="HTML, Hyperlinks, Anchor, Link Tags, Beginners, Tutorial" />
+  <meta name="description" content="Learn all about HTML hyperlinks, attributes, and examples in a clean and beginner-friendly way." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <section class="main">
+    <h1>Hyperlinks in HTML</h1>
+    <hr /><br />
+
+    <p>Hyperlinks let users navigate between pages, files, or sections using the <code>&lt;a&gt;</code> tag.</p>
+
+    <section>
+      <h2>1. Basic Link</h2>
+      <pre class="code">
+&lt;a href="https://example.com"&gt;Visit Example.com&lt;/a&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>2. Open in a New Tab</h2>
+      <p><code>target="_blank"</code> opens the link in a new browser tab.</p>
+      <pre class="code">
+&lt;a href="https://example.com" target="_blank"&gt;Open in new tab&lt;/a&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>3. Tooltip with Title</h2>
+      <pre class="code">
+&lt;a href="https://example.com" title="Go to Example"&gt;Hover for Tooltip&lt;/a&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>4. Download a File</h2>
+      <pre class="code">
+&lt;a href="files/sample.pdf" download&gt;Download PDF&lt;/a&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>5. Email and Phone Links</h2>
+      <pre class="code">
+&lt;a href="mailto:baljit@example.com"&gt;Send Email&lt;/a&gt;<br>
+&lt;a href="tel:+919999999999"&gt;Call Me&lt;/a&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>6. Internal Page Links</h2>
+      <pre class="code">
+&lt;a href="#footer"&gt;Go to Footer&lt;/a&gt;
+
+...
+
+&lt;footer id="footer"&gt;This is the footer section&lt;/footer&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>7. Safe External Links</h2>
+      <p>Prevent security issues by using <code>rel="noopener noreferrer"</code> with <code>target="_blank"</code>.</p>
+      <pre class="code">
+&lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Secure Link&lt;/a&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>8. Link to Local Files</h2>
+      <pre class="code">
+&lt;a href="images/photo.jpg"&gt;View Image&lt;/a&gt;<br>
+&lt;a href="docs/info.html"&gt;Open Info Page&lt;/a&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>9. Nesting Elements</h2>
+      <pre class="code">
+&lt;a href="https://example.com"&gt;
+  &lt;img src="images/logo.png" alt="Logo"&gt;
+&lt;/a&gt;
+      </pre>
+    </section>
+
+    <div style="text-align:center;">
+        <a href="text-formatting.html"><button>← Previous Page</button></a>
+      <a href="multimedia.html"><button>Next Page →</button></a>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>© <a href="https://baljitpanda.rf.gd" target="_blank">Baljit Panda</a> | All Rights Reserved</p>
+    <p><a href="terms.html">Lisence [GNU General Public License (GPL) v3]</a></p>
+  </footer>
+</body>
+</html>

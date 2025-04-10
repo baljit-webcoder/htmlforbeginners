@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML for Beginners</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Baljit Panda" />
+  <meta name="keywords" content="HTML, Lists, ul, ol, dl, li, Beginners" />
+  <meta name="description" content="Learn how to use lists in HTML: ordered, unordered, description lists, and more." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <section class="main">
+    <h1>Lists in HTML</h1>
+    <hr /><br />
+
+    <p>HTML offers three types of lists: unordered, ordered, and description lists. Lists help organize content clearly and cleanly.</p>
+
+    <section>
+      <h2>1. Unordered List - <code>&lt;ul&gt;</code></h2>
+      <p>Unordered lists show items with bullets (•).</p>
+      <pre class="code">
+&lt;ul&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+  &lt;li&gt;Eggs&lt;/li&gt;
+  &lt;li&gt;Bread&lt;/li&gt;
+&lt;/ul&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>2. Ordered List - <code>&lt;ol&gt;</code></h2>
+      <p>Ordered lists show items with numbers, letters, or roman numerals.</p>
+      <pre class="code">
+&lt;ol&gt;
+  &lt;li&gt;Wake up&lt;/li&gt;
+  &lt;li&gt;Brush teeth&lt;/li&gt;
+  &lt;li&gt;Have breakfast&lt;/li&gt;
+&lt;/ol&gt;
+      </pre>
+
+      <h3>Type Attribute</h3>
+      <p>You can change the numbering style using <code>type</code>:</p>
+      <ul>
+        <li><code>type="1"</code> – Numbers (1, 2, 3)</li>
+        <li><code>type="A"</code> – Capital letters (A, B, C)</li>
+        <li><code>type="a"</code> – Lowercase letters (a, b, c)</li>
+        <li><code>type="I"</code> – Upper Roman numerals (I, II, III)</li>
+        <li><code>type="i"</code> – Lower Roman numerals (i, ii, iii)</li>
+      </ul>
+      <pre class="code">
+&lt;ol type="A"&gt;
+  &lt;li&gt;Alpha&lt;/li&gt;
+  &lt;li&gt;Beta&lt;/li&gt;
+&lt;/ol&gt;
+      </pre>
+
+      <h3>Start Attribute</h3>
+      <p>Use <code>start</code> to begin from a specific number or letter:</p>
+      <pre class="code">
+&lt;ol start="5"&gt;
+  &lt;li&gt;Step 5&lt;/li&gt;
+  &lt;li&gt;Step 6&lt;/li&gt;
+&lt;/ol&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>3. Description List - <code>&lt;dl&gt;</code></h2>
+      <p>A description list contains terms and their descriptions using <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code>. <code>&lt;dt&gt;</code> is ued for the term name & <code>&lt;dd&gt;</code> is used for the description of the term.</p>
+      <pre class="code">
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>4. Nested Lists</h2>
+      <p>You can place one list inside another to create sublists. The nested list should be the child of (inside) the <code>&lt;li&gt;</code>tags.</p>
+      <pre class="code">
+&lt;ul&gt;
+  &lt;li&gt;Fruits
+    &lt;ul&gt;
+      &lt;li&gt;Apple&lt;/li&gt;
+      &lt;li&gt;Banana&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Vegetables&lt;/li&gt;
+&lt;/ul&gt;
+      </pre>
+    </section>
+
+    <div style="text-align:center;">
+      <a href="buttons-more.html"><button>← Previous Page</button></a>
+      <a href="meta-tags.html"><button>Next Page →</button></a>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>© <a href="https://baljitpanda.rf.gd" target="_blank">Baljit Panda</a> | All Rights Reserved</p>
+    <p><a href="terms.html">Lisence [GNU General Public License (GPL) v3]</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML for Beginners</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Baljit Panda">
+    <meta name="keywords" content="Simple, HTML, For Beginners, Easy, Short">
+    <meta name="description" content="A website containing notes for absolute beginners to learn HTML, in a simple & effective way.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <section class="main">
+        <h1>Introduction to HTML</h1>
+        <hr><br>
+        <p>This page gives you a basic introduction to HTML.</p>
+
+        <section id="extension">
+            <h2>File Extension</h2>
+            <p>
+                An HTML file always has either a <strong>.html</strong> or a <strong>.htm</strong> file extension.  
+                This allows the browser to recognize and render the site correctly.
+            </p>
+        </section>
+
+        <section id="basic">
+            <h2>HTML Tags</h2>
+            <p>
+                HTML is written using tags. There are two types of tags:  
+                self-closing tags that do not have content inside them, and  
+                non-self-closing tags that do have content inside them.
+            </p>
+            <p>
+                These tags are written inside <code>&lt;</code> and <code>&gt;</code>.  
+                For example, <code>&lt;h1&gt;Hello&lt;/h1&gt;</code> is a heading tag.
+            </p>
+            <p>
+                If you want to display special characters like <code>&lt;</code> or <code>&gt;</code> on your webpage,  
+                you must use HTML entities:
+            </p>
+            <ul>
+                <li>To get <code>&lt;</code>, type: <code>&amp;lt;</code></li>
+                <li>To get <code>&gt;</code>, type: <code>&amp;gt;</code></li>
+                <li>To get <code>&amp;</code>, type: <code>&amp;amp;</code></li>
+            </ul>
+        </section>              
+
+        <section id="declaration">
+            <h2>Declaration</h2>
+            <p>
+                Every HTML page starts with a declaration tag. This tag always sits at the top of the page.  
+                In HTML5, we use <code>&lt;!DOCTYPE html&gt;</code> to tell the browser that the webpage is written using HTML5.
+            </p>
+        </section>
+
+        <section id="html">
+            <h2>HTML Tag</h2>
+            <p>
+                All HTML code must be written inside <code>&lt;html&gt;</code> and <code>&lt;/html&gt;</code> tags.  
+                These tags should be placed just after the declaration.
+            </p>
+        </section>
+
+        <section id="head">
+            <h2>&lt;head&gt; Tag</h2>
+            <p>
+                The <code>&lt;head&gt;</code> section contains important information about the webpage,  
+                such as the title, character encoding, linked stylesheets, and meta tags.  
+                It is not displayed on the actual webpage.
+            </p>
+        </section>
+
+        <section id="body">
+            <h2>&lt;body&gt; Tag</h2>
+            <p>
+                The <code>&lt;body&gt;</code> section contains everything that you see on the webpage.  
+                This includes headings, paragraphs, images, links, buttons, and more.
+            </p>
+        </section>
+
+        <section id="html-lang">
+            <h2>HTML lang Attribute</h2>
+            <p>
+                The <code>lang</code> attribute is added to the <code>&lt;html&gt;</code> tag to specify the language of the page.  
+                For example, <code>&lt;html lang="en"&gt;</code> means the content is in English.  
+                This helps screen readers and browsers understand the content better.
+            </p>
+            <p>Here's an example of how to use it:</p>
+            <pre class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Hello, world!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        </section>
+    </section>
+    <div style="text-align:center;">
+        <a href="index.html"><button>← Previous Page</button></a>
+        <a href="headings.html"><button>Next Page →</button></a>
+    </div>
+    <br><br>
+
+    <footer>
+        <p>© <span><a href="https://baljitpanda.rf.gd" target="_blank">Baljit Panda</a></span> | All Rights Reserved</p>
+        <p><a href="terms.html">Lisence [GNU General Public License (GPL) v3]</a></p>
+    </footer>
+</body>
+</html>

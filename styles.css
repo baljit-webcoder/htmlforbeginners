@@ -1,0 +1,99 @@
+/* Dark Minimal Dev Style (GitHub + VS Code inspired) */
+body {
+    background-color: #1e1e1e;
+    color: #eaeaea;
+    font-family: 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1em;
+}
+
+p, dl, ul, ol {
+    max-width: 90%;
+    margin: 0 auto 1em;
+    font-size: 1rem;
+    color: #dddddd;
+}
+
+ul, ol, dl {
+    text-align: left;
+}
+
+section.main {
+    padding: 20px;
+    text-align: center;
+    background-color: #252526;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    margin: 20px;
+}
+
+a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background-color: #2d2d2d;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: #c5f6c7;
+    font-family: 'Consolas', monospace;
+}
+
+button {
+    background-color: #2d2d2d;
+    color: #eaeaea;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #aaaaaa;
+    background-color: #2b2b2b;
+    border-top: 1px solid #444;
+    border-radius: 0 0 12px 12px;
+}
+
+pre.code {
+    background-color: #1e1e1e;
+    color: #c5f6c7;
+    padding: 15px;
+    border-left: 4px solid #4fc3f7;
+    margin: 20px auto;
+    max-width: 90%;
+    overflow-x: auto;
+    text-align: left;
+    white-space: pre-wrap;
+    font-family: 'Consolas', monospace;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}

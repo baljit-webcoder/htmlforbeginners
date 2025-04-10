@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced Multimedia – HTML for Beginners</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Baljit Panda" />
+  <meta name="keywords" content="HTML, multimedia, advanced, picture, iframe, source, track, canvas, object, embed" />
+  <meta name="description" content="Advanced HTML multimedia tags explained simply: picture, iframe, source, track, canvas, object, embed." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+</head>
+<body>
+
+  <section class="main">
+    <h1>Advanced Multimedia in HTML</h1>
+    <hr /><br />
+
+    <section>
+      <h2>&lt;picture&gt;</h2>
+      <p>The <code>&lt;picture&gt;</code> element helps display different image formats or sizes based on device or browser. You can give options like <code>.webp</code>, <code>.jpg</code>, etc.</p>
+      <pre class="code">
+&lt;picture&gt;
+  &lt;source srcset="image.webp" type="image/webp"&gt;
+  &lt;source srcset="image.jpg" type="image/jpeg"&gt;
+  &lt;img src="fallback.jpg" alt="Descriptive image text"&gt;
+&lt;/picture&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>&lt;iframe&gt;</h2>
+      <p>The <code>&lt;iframe&gt;</code> element allows embedding another website, video, map, or even a PDF viewer inside your HTML.</p>
+      <pre class="code">
+&lt;iframe src="https://example.com" width="600" height="400" title="Example Iframe"&gt;&lt;/iframe&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>&lt;source&gt;</h2>
+      <p>The <code>&lt;source&gt;</code> tag is used inside <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, or <code>&lt;picture&gt;</code> to offer format options.</p>
+      <pre class="code">
+&lt;video controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;source src="movie.ogg" type="video/ogg"&gt;
+&lt;/video&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>&lt;track&gt;</h2>
+      <p>The <code>&lt;track&gt;</code> tag adds subtitles, captions, or descriptions for videos. These files are usually <code>.vtt</code> files.</p>
+      <pre class="code">
+&lt;video controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;track src="subtitles.vtt" kind="subtitles" srclang="en" label="English"&gt;
+&lt;/video&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>&lt;canvas&gt;</h2>
+      <p>The <code>&lt;canvas&gt;</code> tag provides an area where JavaScript can draw shapes, games, or visual effects.</p>
+      <pre class="code">
+&lt;canvas id="myCanvas" width="300" height="150"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "lime";
+ctx.fillRect(10, 10, 150, 100);
+&lt;/script&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>&lt;object&gt;</h2>
+      <p>The <code>&lt;object&gt;</code> tag can embed PDFs, HTML files, images, or apps directly into your page.</p>
+      <pre class="code">
+&lt;object data="document.pdf" type="application/pdf" width="600" height="400"&gt;
+  Your browser doesn't support PDFs.
+&lt;/object&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>&lt;embed&gt;</h2>
+      <p>The <code>&lt;embed&gt;</code> tag is a simpler version of <code>&lt;object&gt;</code>. It's used to embed media like videos, games, or documents.</p>
+      <pre class="code">
+&lt;embed src="file.svg" type="image/svg+xml" width="400" height="300"&gt;
+      </pre>
+    </section>
+
+    <div style="text-align:center;">
+      <a href="tables.html"><button>← Previous Page</button></a>
+      <a href="exercise-1.html"><button>Exercise 1 →</button></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <a href="https://baljitpanda.rf.gd" target="_blank">Baljit Panda</a> | All Rights Reserved</p>
+    <p><a href="terms.html">License [GNU General Public License (GPL) v3]</a></p>
+  </footer>
+
+</body>
+</html>

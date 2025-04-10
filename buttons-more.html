@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML for Beginners</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Baljit Panda" />
+  <meta name="keywords" content="HTML, Buttons, Break, HR, Comments, Beginners" />
+  <meta name="description" content="Learn how to use buttons, comments, line breaks, and horizontal rules in HTML." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <section class="main">
+    <h1>Buttons, Line Breaks, Rules & Comments in HTML</h1>
+    <hr /><br />
+
+    <section>
+      <h2>1. Buttons - <code>&lt;button&gt;</code> and Hyperlink Style</h2>
+      <p>The <code>&lt;button&gt;</code> tag defines a clickable button. It is mostly used in forms or styled with CSS for actions.</p>
+      <pre class="code">
+&lt;button&gt;Click Me&lt;/button&gt;
+      </pre>
+
+      <p>HTML buttons are often used for submitting forms:</p>
+      <pre class="code">
+&lt;form&gt;
+  &lt;input type="text" name="name"&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+      </pre>
+
+      <p>To make a button that works like a link (without JavaScript), you can wrap a <code>&lt;button&gt;</code> inside an <code>&lt;a&gt;</code> tag:</p>
+      <pre class="code">
+&lt;a href="https://example.com"&gt;
+  &lt;button&gt;Visit Example&lt;/button&gt;
+&lt;/a&gt;
+      </pre>
+
+      <p><strong>OR</strong> you can style a link to look like a button:<p>(We will use this after learning CSS)</p></p>
+      <pre class="code">
+&lt;a href="https://example.com" class="button"&gt;Styled Link Button&lt;/a&gt;
+      </pre>
+      
+    </section>
+
+    <section>
+      <h2>2. Line Break - <code>&lt;br&gt;</code></h2>
+      <p>The <code>&lt;br&gt;</code> tag breaks a line and continues on the next line.</p>
+      <pre class="code">
+This is line one.&lt;br&gt;
+This is line two.
+      </pre>
+    </section>
+
+    <section>
+      <h2>3. Horizontal Rule - <code>&lt;hr&gt;</code></h2>
+      <p>The <code>&lt;hr&gt;</code> tag draws a horizontal line to divide sections.</p>
+      <pre class="code">
+&lt;p&gt;Above line&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Below line&lt;/p&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h2>4. Comments - <code>&lt;!-- --&gt;</code></h2>
+      <p>Use comments to leave notes inside HTML code. They are not shown on the page.</p>
+      <pre class="code">
+&lt;!-- This is a comment --&gt;
+&lt;p&gt;This is visible text&lt;/p&gt;
+      </pre>
+    </section>
+
+    <div style="text-align:center;">
+      <a href="multimedia.html"><button>← Previous Page</button></a>
+      <a href="lists.html"><button>Next Page →</button></a>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>© <a href="https://baljitpanda.rf.gd" target="_blank">Baljit Panda</a> | All Rights Reserved</p>
+    <p><a href="terms.html">Lisence [GNU General Public License (GPL) v3]</a></p>
+  </footer>
+</body>
+</html>

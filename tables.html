@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML for Beginners</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Baljit Panda" />
+  <meta name="description" content="Master HTML tables step-by-step with clear explanations, CSS styling, and practical examples." />
+  <meta name="keywords" content="HTML, Tables, CSS, caption, thead, tbody, colspan, rowspan, scope, Beginners" />
+  <meta name="license" content="GPL v3" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    th {
+      background-color: #003300;
+      color: #33ff33;
+    }
+    th, td {
+      border: 1px solid #00ff00;
+      padding: 8px;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background-color: #111111;
+    }
+  </style>
+</head>
+<body>
+  <section class="main">
+    <h1>HTML Tables – Full Tutorial</h1>
+    <hr /><br />
+    <p>This page helps you understand <strong>everything about HTML tables</strong> and how to style them using CSS.</p>
+
+    <section>
+      <h2>📚 HTML Table Tags - Explained Clearly</h2>
+
+      <h3>&lt;table&gt; – Table Container</h3>
+      <p>Defines the start and end of a table.</p>
+      <pre class="code">&lt;table&gt; ... &lt;/table&gt;</pre>
+
+      <h3>&lt;tr&gt; – Table Row</h3>
+      <p>Creates one horizontal row inside the table.</p>
+      <pre class="code">
+&lt;tr&gt;
+  &lt;td&gt;A&lt;/td&gt;
+  &lt;td&gt;B&lt;/td&gt;
+&lt;/tr&gt;
+      </pre>
+
+      <h3>&lt;td&gt; – Table Data</h3>
+      <p>Represents a single normal cell.</p>
+      <pre class="code">&lt;td&gt;Hello&lt;/td&gt;</pre>
+
+      <h3>&lt;th&gt; – Table Header</h3>
+      <p>Defines a heading cell. Bold and centered by default.</p>
+      <pre class="code">&lt;th&gt;Name&lt;/th&gt;</pre>
+
+      <h3>&lt;caption&gt; – Table Title</h3>
+      <p>Adds a title at the top of the table.</p>
+      <pre class="code">&lt;caption&gt;Student Info&lt;/caption&gt;</pre>
+
+      <h3>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h3>
+      <p>Groups parts of the table: header, body, and footer.</p>
+      <pre class="code">
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Col1&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;End&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;
+      </pre>
+
+      <h3>&lt;colgroup&gt; &amp; &lt;col&gt; – Style Columns</h3>
+      <p>Used to apply styles to entire columns.</p>
+      <pre class="code">
+&lt;colgroup&gt;
+  &lt;col style="background-color:gray;"&gt;
+&lt;/colgroup&gt;
+      </pre>
+
+      <h3>🔧 Extra Table Attributes</h3>
+      <ul>
+        <li><strong><code>colspan</code></strong>: Merges cells horizontally</li>
+        <pre class="code">&lt;td colspan="2"&gt;Merged&lt;/td&gt;</pre>
+        <li><strong><code>rowspan</code></strong>: Merges cells vertically</li>
+        <pre class="code">&lt;td rowspan="2"&gt;Merged&lt;/td&gt;</pre>
+        <li><strong><code>scope="row"</code></strong>: Declares header for the row</li>
+        <pre class="code">&lt;th scope="row"&gt;Raj&lt;/th&gt;</pre>
+        <li><strong><code>scope="col"</code></strong>: Declares header for the column</li>
+        <pre class="code">&lt;th scope="col"&gt;Name&lt;/th&gt;</pre>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎨 CSS Table Styling - With Code</h2>
+
+      <h3>1. border-collapse</h3>
+      <p>Removes the gap between borders in the table.</p>
+      <pre class="code">table { border-collapse: collapse; }</pre>
+
+      <h3>2. width</h3>
+      <p>Sets the width of the table relative to its container.</p>
+      <pre class="code">table { width: 80%; }</pre>
+
+      <h3>3. margin</h3>
+      <p>Centers the table and adds spacing above and below.</p>
+      <pre class="code">table { margin: 20px auto; }</pre>
+
+      <h3>4. background-color</h3>
+      <p>Applies background color to cells or headers.</p>
+      <pre class="code">
+th {
+  background-color: #003300;
+}
+tr:nth-child(even) {
+  background-color: #111111;
+}
+      </pre>
+
+      <h3>5. color</h3>
+      <p>Sets the color of text in header cells.</p>
+      <pre class="code">th { color: #33ff33; }</pre>
+
+      <h3>6. padding</h3>
+      <p>Adds space inside each cell to make content readable.</p>
+      <pre class="code">td, th { padding: 8px; }</pre>
+
+      <h3>7. text-align</h3>
+      <p>Aligns text horizontally inside cells.</p>
+      <pre class="code">td, th { text-align: center; }</pre>
+
+      <h3>8. border</h3>
+      <p>Adds border to each table cell.</p>
+      <pre class="code">td, th { border: 1px solid #00ff00; }</pre>
+
+      <h3>9. nth-child</h3>
+      <p>Adds zebra stripes (alternating row colors).</p>
+      <pre class="code">tr:nth-child(even) { background-color: #111111; }</pre>
+    </section>
+
+    <div style="text-align:center;">
+      <a href="meta-tags.html"><button>← Previous Page</button></a>
+      <a href="advanced-multimedia.html"><button>Next Page →</button></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <a href="https://baljitpanda.rf.gd" target="_blank">Baljit Panda</a> | All Rights Reserved</p>
+    <p><a href="terms.html">Lisence [GNU General Public License (GPL) v3]</a></p>
+  </footer>
+</body>
+</html>
